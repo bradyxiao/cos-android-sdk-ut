@@ -27,7 +27,7 @@ android.libraryVariants.all { variant ->
             } else {
                 version = project.name.replace("cosv4_", "v4.")
             }
-            rename "(.*).xml", "cos-android-sdk-${version}.xml"
+            rename "(.*).xml", "android-${version}.xml"
         }
     }
 }
