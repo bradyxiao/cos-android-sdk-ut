@@ -42,6 +42,7 @@ import org.junit.Test;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
+import java.security.spec.ECField;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -268,25 +269,33 @@ public class ObjectTest extends AndroidTestCase {
 
     @Test
     public void test() throws Exception {
-        QBaseServe.init(getContext());
+        try {
+            QBaseServe.init(getContext());
 
-        putObjectTest();
-        headObjectTest();
-        optionObjectTest();
-        putObjectACLTest();
-        getObjectACLTest();
-        getObjectTest();
-        deleteObjectTest();
-        deleteMulitObjectTest();
-        appendObjectTest();
+            putObjectTest();
+            headObjectTest();
+            optionObjectTest();
+            putObjectACLTest();
+            getObjectACLTest();
+            getObjectTest();
+            deleteObjectTest();
+            deleteMulitObjectTest();
+            appendObjectTest();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     @Test
     public void testMultiUpload() throws Exception {
-        QBaseServe.init(getContext());
+        try {
+            QBaseServe.init(getContext());
 
-        multiUploadObjectTest();
-        abortMultiUploadTest();
+            multiUploadObjectTest();
+            abortMultiUploadTest();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
 }
