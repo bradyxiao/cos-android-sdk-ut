@@ -39,3 +39,5 @@ dependencies {
     })
 
 }
+
+apply from: '../key.gradle'

@@ -42,8 +42,8 @@ public class QBaseServe {
                         .setDebuggable(true)
                         .build();
                 QCloudCredentialProvider qCloudCredentialProvider = new LocalCredentialProvider(
-                        "AKIDPiqmW3qcgXVSKN8jngPzRhvxzYyDL5qP",
-                        "EH8oHoLgpmJmBQUM1Uoywjmv7EFzd5OJ",
+                        BuildConfig.SECRET_ID,
+                        BuildConfig.SECRET_KEY,
                         60 * 60);
                 cosXmlClient = new CosXmlService(context, configuration, qCloudCredentialProvider);
             }

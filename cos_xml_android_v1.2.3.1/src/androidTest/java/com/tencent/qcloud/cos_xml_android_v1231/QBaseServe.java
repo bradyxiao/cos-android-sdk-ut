@@ -12,6 +12,7 @@ import com.tencent.cos.xml.model.object.DeleteObjectRequest;
 import com.tencent.cos.xml.model.object.DeleteObjectResult;
 import com.tencent.qcloud.core.network.auth.LocalCredentialProvider;
 import com.tencent.qcloud.core.network.auth.QCloudCredentialProvider;
+import com.tencent.qcloud.cos_xml_android_v123.BuildConfig;
 
 import java.io.File;
 import java.io.IOException;
@@ -41,8 +42,7 @@ public class QBaseServe {
                         .setAppidAndRegion(appid,region)
                         .build();
                 QCloudCredentialProvider qCloudCredentialProvider = new LocalCredentialProvider(
-                        "AKIDPiqmW3qcgXVSKN8jngPzRhvxzYyDL5qP",
-                        "EH8oHoLgpmJmBQUM1Uoywjmv7EFzd5OJ",
+                        BuildConfig.SECRET_ID, BuildConfig.SECRET_KEY,
                         60 * 60);
                 cosXmlClient = new CosXmlService(context, configuration, qCloudCredentialProvider);
             }

@@ -39,8 +39,8 @@ public class QBaseServe {
                 QBaseServe.context = context;
                 CosXmlServiceConfig cosXmlServiceConfig = new CosXmlServiceConfig(appid, region);
                 cosXmlClient = new CosXmlService(context,cosXmlServiceConfig,
-                        new CosXmlLocalCredentialProvider("AKIDPiqmW3qcgXVSKN8jngPzRhvxzYyDL5qP",
-                                "EH8oHoLgpmJmBQUM1Uoywjmv7EFzd5OJ",600));
+                        new CosXmlLocalCredentialProvider(BuildConfig.SECRET_ID,
+                                BuildConfig.SECRET_KEY,600));
             }
         }
 

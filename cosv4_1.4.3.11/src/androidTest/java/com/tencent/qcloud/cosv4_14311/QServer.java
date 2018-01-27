@@ -58,15 +58,15 @@ public class QServer {
     }
 
     public String getSignOnce(String fileId){
-        String secretId = "AKIDPiqmW3qcgXVSKN8jngPzRhvxzYyDL5qP";
-        String secretKey = "EH8oHoLgpmJmBQUM1Uoywjmv7EFzd5OJ";
+        String secretId = BuildConfig.SECRET_ID;
+        String secretKey = BuildConfig.SECRET_KEY;
         LocalCredentialProvider localCredentialProvider = new LocalCredentialProvider(secretKey);
         return localCredentialProvider.getSign(appid, bucket, secretId, fileId, 60 * 60);
     }
 
     public String getSign(){
-        String secretId = "AKIDPiqmW3qcgXVSKN8jngPzRhvxzYyDL5qP";
-        String secretKey = "EH8oHoLgpmJmBQUM1Uoywjmv7EFzd5OJ";
+        String secretId = BuildConfig.SECRET_ID;
+        String secretKey = BuildConfig.SECRET_KEY;
         LocalCredentialProvider localCredentialProvider = new LocalCredentialProvider(secretKey);
         return localCredentialProvider.getSign(appid, bucket, secretId, null, 60 * 60);
     }

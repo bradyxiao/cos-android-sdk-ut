@@ -11,6 +11,7 @@ import com.tencent.cos.model.COSResult;
 import com.tencent.cos.model.DeleteObjectRequest;
 import com.tencent.cos.task.listener.ICmdTaskListener;
 import com.tencent.cosV4_14317.utils.LocalCredentialProvider;
+import com.tencent.qcloud.cosv4_14317.BuildConfig;
 
 import java.io.File;
 import java.io.IOException;
@@ -57,15 +58,15 @@ public class QServer {
     }
 
     public String getSignOnce(String fileId){
-        String secretId = "AKIDPiqmW3qcgXVSKN8jngPzRhvxzYyDL5qP";
-        String secretKey = "EH8oHoLgpmJmBQUM1Uoywjmv7EFzd5OJ";
+        String secretId = BuildConfig.SECRET_ID;
+        String secretKey = BuildConfig.SECRET_KEY;
         LocalCredentialProvider localCredentialProvider = new LocalCredentialProvider(secretKey);
         return localCredentialProvider.getSign(appid, bucket, secretId, fileId, 60 * 60);
     }
 
     public String getSign(){
-        String secretId = "AKIDPiqmW3qcgXVSKN8jngPzRhvxzYyDL5qP";
-        String secretKey = "EH8oHoLgpmJmBQUM1Uoywjmv7EFzd5OJ";
+        String secretId = BuildConfig.SECRET_ID;
+        String secretKey = BuildConfig.SECRET_KEY;
         LocalCredentialProvider localCredentialProvider = new LocalCredentialProvider(secretKey);
         return localCredentialProvider.getSign(appid, bucket, secretId, null, 60 * 60);
     }
