@@ -265,25 +265,29 @@ public class BucketTest extends AndroidTestCase {
         bucket = "android" + System.currentTimeMillis() / 1000;
         QService.init(getContext());
 
-        putBucketTest();
-        headBucketTest();
-        getBucketLocationTest();
-        getBucketTest();
-        listMultiUploadsTest();
-        putBucketCORSTest();
-        getBucketCORSTest();
-        deleteBucketCORSTest();
-        putBucketLifecycleTest();
-        getBucketLifecycleTest();
-        deleteBucketLifecycleTest();
-        putBucketVersioningTest();
-        getBucketVersioningTest();
+        try {
+            putBucketTest();
+            headBucketTest();
+            getBucketLocationTest();
+            getBucketTest();
+            listMultiUploadsTest();
+            putBucketCORSTest();
+            getBucketCORSTest();
+            deleteBucketCORSTest();
+            putBucketLifecycleTest();
+            getBucketLifecycleTest();
+            deleteBucketLifecycleTest();
+            putBucketVersioningTest();
+            getBucketVersioningTest();
 //        putBucketReplicationTest();
 //        getBucketReplicationTest();
-        deleteBucketReplicationTest();
-        putBucketACLTest();
-        getBucketACLTest();
-        deleteBucketTest();
+            deleteBucketReplicationTest();
+            putBucketACLTest();
+            getBucketACLTest();
+            deleteBucketTest();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
 }
