@@ -1,16 +1,12 @@
-Properties properties = new Properties()
-InputStream inputStream = project.rootProject.file('local.properties').newDataInputStream()
-properties.load(inputStream)
-
 android {
     buildTypes {
         debug {
-            buildConfigField "String", "SECRET_ID", properties.getProperty("SECRET_ID", "\"\"")
-            buildConfigField "String", "SECRET_KEY", properties.getProperty("SECRET_KEY", "\"\"")
+            buildConfigField "String", "SECRET_ID", "\"$System.env.COS_SECRET_ID\""
+            buildConfigField "String", "SECRET_KEY", "\"$System.env.COS_SECRET_KEY\""
         }
         release {
-            buildConfigField "String", "SECRET_ID", properties.getProperty("SECRET_ID", "\"\"")
-            buildConfigField "String", "SECRET_KEY", properties.getProperty("SECRET_KEY", "\"\"")
+            buildConfigField "String", "SECRET_ID", "\"$System.env.COS_SECRET_ID\""
+            buildConfigField "String", "SECRET_KEY", "\"$System.env.COS_SECRET_KEY\""
         }
 
     }
