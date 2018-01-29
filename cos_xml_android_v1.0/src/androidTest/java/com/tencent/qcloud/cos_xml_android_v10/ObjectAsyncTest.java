@@ -471,17 +471,17 @@ public class ObjectAsyncTest extends AndroidTestCase {
     public void test() throws Exception {
         QBaseServe.init(getContext());
 
-        putObjectTest();
-        headObjectTest();
-        optionObjectTest();
-        putObjectACLTest();
-        getObjectACLTest();
-        getObjectTest();
-        deleteObjectTest();
-        deleteMultiObjectTest();
-        appendObjectTest();
-        mulitUpload();
-        abortMulti();
+//        putObjectTest();
+//        headObjectTest();
+//        optionObjectTest();
+//        putObjectACLTest();
+//        getObjectACLTest();
+//        getObjectTest();
+//        deleteObjectTest();
+//        deleteMultiObjectTest();
+//        appendObjectTest();
+//        mulitUpload();
+//        abortMulti();
 
     }
 }
