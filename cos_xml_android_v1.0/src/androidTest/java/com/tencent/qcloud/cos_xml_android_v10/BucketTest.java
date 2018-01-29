@@ -64,23 +64,23 @@ public class BucketTest extends AndroidTestCase {
     public void putBucketTest() throws QCloudException {
         PutBucketRequest request = new PutBucketRequest();
         request.setBucket(bucket);
-        request.setSign(600,null,null);
+        request.setSign(600, null, null);
         PutBucketResult result = QBaseServe.cosXmlClient.putBucket(request);
         Log.d(TAG, result.printHeaders() + "|" + result.printBody());
     }
 
-    public void headBucketTest() throws QCloudException{
+    public void headBucketTest() throws QCloudException {
         HeadBucketRequest request = new HeadBucketRequest();
         request.setBucket(bucket);
-        request.setSign(600,null,null);
-        HeadBucketResult result =QBaseServe.cosXmlClient.headBucket(request);
+        request.setSign(600, null, null);
+        HeadBucketResult result = QBaseServe.cosXmlClient.headBucket(request);
         Log.d(TAG, result.printHeaders() + "|" + result.printBody());
     }
 
     public void getBucketTest() throws QCloudException {
         GetBucketRequest request = new GetBucketRequest();
         request.setBucket(bucket);
-        request.setSign(600,null,null);
+        request.setSign(600, null, null);
         GetBucketResult result = QBaseServe.cosXmlClient.getBucket(request);
         Log.d(TAG, result.printHeaders() + "|" + result.printBody());
     }
@@ -96,10 +96,10 @@ public class BucketTest extends AndroidTestCase {
     public void putBucketCORSTest() throws QCloudException {
         PutBucketCORSRequest request = new PutBucketCORSRequest();
         request.setBucket(bucket);
-        request.setSign(600,null,null);
+        request.setSign(600, null, null);
         CORSRule corsRule = new CORSRule();
         corsRule.id = "cors";
-        corsRule.allowedOrigin  =  "http://cloud.tencent.com";
+        corsRule.allowedOrigin = "http://cloud.tencent.com";
         corsRule.allowedMethod = new ArrayList<>();
         corsRule.allowedMethod.add("PUT");
         corsRule.allowedHeader = new ArrayList<>();
@@ -116,7 +116,7 @@ public class BucketTest extends AndroidTestCase {
     public void getBucketCORSTest() throws QCloudException {
         GetBucketCORSRequest request = new GetBucketCORSRequest();
         request.setBucket(bucket);
-        request.setSign(600,null,null);
+        request.setSign(600, null, null);
         GetBucketCORSResult result = QBaseServe.cosXmlClient.getBucketCORS(request);
         Log.d(TAG, result.printHeaders() + "|" + result.printBody());
     }
@@ -124,7 +124,7 @@ public class BucketTest extends AndroidTestCase {
     public void deleteBucketCORSTest() throws QCloudException {
         DeleteBucketCORSRequest request = new DeleteBucketCORSRequest();
         request.setBucket(bucket);
-        request.setSign(600,null,null);
+        request.setSign(600, null, null);
         DeleteBucketCORSResult result = QBaseServe.cosXmlClient.deleteBucketCORS(request);
         Log.d(TAG, result.printHeaders() + "|" + result.printBody());
     }
@@ -132,7 +132,7 @@ public class BucketTest extends AndroidTestCase {
     public void putBucketLifecycleTest() throws QCloudException {
         PutBucketLifecycleRequest request = new PutBucketLifecycleRequest();
         request.setBucket(bucket);
-        request.setSign(600,null,null);
+        request.setSign(600, null, null);
         Rule rule = new Rule();
         rule.id = "lifeID";
         rule.status = "Enable";
@@ -147,7 +147,7 @@ public class BucketTest extends AndroidTestCase {
         GetBucketLifecycleRequest request;
 
         request = new GetBucketLifecycleRequest();
-        request.setSign(600,null,null);
+        request.setSign(600, null, null);
         request.setBucket(bucket);
         GetBucketLifecycleResult result = QBaseServe.cosXmlClient.getBucketLifecycle(request);
         Log.d(TAG, result.printHeaders() + "|" + result.printBody());
@@ -156,7 +156,7 @@ public class BucketTest extends AndroidTestCase {
     public void deleteBucketLifecycleTest() throws QCloudException {
         DeleteBucketLifecycleRequest request = new DeleteBucketLifecycleRequest();
         request.setBucket(bucket);
-        request.setSign(600,null,null);
+        request.setSign(600, null, null);
         DeleteBucketLifecycleResult result = QBaseServe.cosXmlClient.deleteBucketLifecycle(request);
         Log.d(TAG, result.printHeaders() + "|" + result.printBody());
     }
@@ -164,7 +164,7 @@ public class BucketTest extends AndroidTestCase {
     public void putBucketTaggingTest() throws QCloudException {
         PutBucketTaggingRequest request = new PutBucketTaggingRequest();
         request.setBucket(bucket);
-        request.setSign(600,null,null);
+        request.setSign(600, null, null);
         PutBucketTaggingResult result = QBaseServe.cosXmlClient.putBucketTagging(request);
         Log.d(TAG, result.printHeaders() + "|" + result.printBody());
     }
@@ -172,7 +172,7 @@ public class BucketTest extends AndroidTestCase {
     public void getBucketTaggingTest() throws QCloudException {
         GetBucketTaggingRequest request = new GetBucketTaggingRequest();
         request.setBucket(bucket);
-        request.setSign(600,null,null);
+        request.setSign(600, null, null);
         GetBucketTaggingResult result = QBaseServe.cosXmlClient.getBucketTagging(request);
         Log.d(TAG, result.printHeaders() + "|" + result.printBody());
     }
@@ -180,7 +180,7 @@ public class BucketTest extends AndroidTestCase {
     public void deleteBucketTaggingTest() throws QCloudException {
         DeleteBucketTaggingRequest request = new DeleteBucketTaggingRequest();
         request.setBucket(bucket);
-        request.setSign(600,null,null);
+        request.setSign(600, null, null);
         DeleteBucketTaggingResult result = QBaseServe.cosXmlClient.deleteBucketTagging(request);
         Log.d(TAG, result.printHeaders() + "|" + result.printBody());
     }
@@ -188,7 +188,7 @@ public class BucketTest extends AndroidTestCase {
     public void putBucketACLTest() throws QCloudException {
         PutBucketACLRequest request = new PutBucketACLRequest();
         request.setBucket(bucket);
-        request.setSign(600,null,null);
+        request.setSign(600, null, null);
         PutBucketACLResult result = QBaseServe.cosXmlClient.putBucketACL(request);
         Log.d(TAG, result.printHeaders() + "|" + result.printBody());
     }
@@ -197,7 +197,7 @@ public class BucketTest extends AndroidTestCase {
         GetBucketACLRequest request;
         request = new GetBucketACLRequest();
         request.setBucket(bucket);
-        request.setSign(600,null,null);
+        request.setSign(600, null, null);
         GetBucketACLResult result = QBaseServe.cosXmlClient.getBucketACL(request);
         Log.d(TAG, result.printHeaders() + "|" + result.printBody());
     }
@@ -206,39 +206,43 @@ public class BucketTest extends AndroidTestCase {
     public void deleteBucketTest() throws QCloudException {
         DeleteBucketRequest request = new DeleteBucketRequest();
         request.setBucket(bucket);
-        request.setSign(600,null,null);
+        request.setSign(600, null, null);
         DeleteBucketResult result = QBaseServe.cosXmlClient.deleteBucket(request);
         Log.d(TAG, result.printHeaders() + "|" + result.printBody());
     }
 
 
     @Test
-    public void test() throws QCloudException{
+    public void test() throws QCloudException {
         QBaseServe.init(getContext());
+        try {
 
-        bucket = "android" + System.currentTimeMillis()/1000;
+            bucket = "android" + System.currentTimeMillis() / 1000;
 
-        putBucketTest();
+            putBucketTest();
 
-        headBucketTest();
+            headBucketTest();
 
-        getBucketTest();
+            getBucketTest();
 
 //        listMultiUploadsTest();
 
-        putBucketCORSTest();
+            putBucketCORSTest();
 
-        getBucketCORSTest();
+            getBucketCORSTest();
 
-        deleteBucketCORSTest();
+            deleteBucketCORSTest();
 
-        putBucketLifecycleTest();
-        getBucketLifecycleTest();
-        deleteBucketLifecycleTest();
+            putBucketLifecycleTest();
+            getBucketLifecycleTest();
+            deleteBucketLifecycleTest();
 //
 //        putBucketACLTest();
 //        getBucketACLTest();
 
-        deleteBucketTest();
+            deleteBucketTest();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
