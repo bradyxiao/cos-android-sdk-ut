@@ -16,7 +16,7 @@ android.libraryVariants.all { variant ->
     if(variant.name == 'debug') {
         task connectedAndroidTestAndOutput(type: Copy, dependsOn: connectedAndroidTest) {
             from('build/outputs/androidTest-results/connected')
-            into('../')
+            into('../results')
             def version
             if (project.name.indexOf("cos_xml_android") >= 0) {
                 version = project.name.replace("cos_xml_android_v", "v5.")
