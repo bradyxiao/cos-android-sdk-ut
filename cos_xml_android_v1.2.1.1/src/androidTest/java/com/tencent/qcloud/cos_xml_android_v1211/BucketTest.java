@@ -84,7 +84,7 @@ public class BucketTest extends AndroidTestCase {
         PutBucketCORSRequest request = new PutBucketCORSRequest(bucket);
         CORSRule corsRule = new CORSRule();
         corsRule.id = "cors";
-        corsRule.allowedOrigin  =  "http://cloud.tencent.com";
+        corsRule.allowedOrigin = "http://cloud.tencent.com";
         corsRule.allowedMethod = new ArrayList<>();
         corsRule.allowedMethod.add("PUT");
         corsRule.allowedHeader = new ArrayList<>();
@@ -94,20 +94,32 @@ public class BucketTest extends AndroidTestCase {
         corsRule.maxAgeSeconds = String.valueOf(5000);
         request.addCORSRule(corsRule);
         PutBucketCORSResult result;
-        result = QBaseServe.cosXmlClient.putBucketCORS(request);
-        Log.d(TAG, result.printHeaders() + "|" + result.printBody());
+        try {
+            result = QBaseServe.cosXmlClient.putBucketCORS(request);
+            Log.d(TAG, result.printHeaders() + "|" + result.printBody());
+        } catch (CosXmlServiceException e) {
+            Log.d(TAG, "exception = " + e);
+        }
     }
 
     public void getBucketCORSTest() throws CosXmlServiceException, CosXmlClientException {
         GetBucketCORSRequest request = new GetBucketCORSRequest(bucket);
-        GetBucketCORSResult result = QBaseServe.cosXmlClient.getBucketCORS(request);
-        Log.d(TAG, result.printHeaders() + "|" + result.printBody());
+        try {
+            GetBucketCORSResult result = QBaseServe.cosXmlClient.getBucketCORS(request);
+            Log.d(TAG, result.printHeaders() + "|" + result.printBody());
+        } catch (CosXmlServiceException e) {
+            Log.d(TAG, "exception = " + e);
+        }
     }
 
     public void deleteBucketCORSTest() throws CosXmlServiceException, CosXmlClientException {
         DeleteBucketCORSRequest request = new DeleteBucketCORSRequest(bucket);
-        DeleteBucketCORSResult result = QBaseServe.cosXmlClient.deleteBucketCORS(request);
-        Log.d(TAG, result.printHeaders() + "|" + result.printBody());
+        try {
+            DeleteBucketCORSResult result = QBaseServe.cosXmlClient.deleteBucketCORS(request);
+            Log.d(TAG, result.printHeaders() + "|" + result.printBody());
+        } catch (CosXmlServiceException e) {
+            Log.d(TAG, "exception = " + e);
+        }
     }
 
     public void putBucketLifecycleTest() throws CosXmlServiceException, CosXmlClientException {
@@ -177,10 +189,10 @@ public class BucketTest extends AndroidTestCase {
 
 
     @Test
-    public void test() throws CosXmlServiceException, CosXmlClientException{
+    public void test() throws CosXmlServiceException, CosXmlClientException {
         QBaseServe.init(getContext());
 
-        bucket = "android" + System.currentTimeMillis()/1000;
+        bucket = "android" + System.currentTimeMillis() / 1000;
 
         putBucketTest();
 
