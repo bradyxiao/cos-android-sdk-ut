@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/cos-android-sdk-ut.iml" filepath="$PROJECT_DIR$/cos-android-sdk-ut.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cos_xml_android_v1.0/cos_xml_android_v1.0.iml" filepath="$PROJECT_DIR$/cos_xml_android_v1.0/cos_xml_android_v1.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cos_xml_android_v1.2/cos_xml_android_v1.2.iml" filepath="$PROJECT_DIR$/cos_xml_android_v1.2/cos_xml_android_v1.2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cos_xml_android_v1.2.1/cos_xml_android_v1.2.1.iml" filepath="$PROJECT_DIR$/cos_xml_android_v1.2.1/cos_xml_android_v1.2.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cos_xml_android_v1.2.1.1/cos_xml_android_v1.2.1.1.iml" filepath="$PROJECT_DIR$/cos_xml_android_v1.2.1.1/cos_xml_android_v1.2.1.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cos_xml_android_v1.2.2/cos_xml_android_v1.2.2.iml" filepath="$PROJECT_DIR$/cos_xml_android_v1.2.2/cos_xml_android_v1.2.2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cos_xml_android_v1.2.3/cos_xml_android_v1.2.3.iml" filepath="$PROJECT_DIR$/cos_xml_android_v1.2.3/cos_xml_android_v1.2.3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cos_xml_android_v1.2.3.1/cos_xml_android_v1.2.3.1.iml" filepath="$PROJECT_DIR$/cos_xml_android_v1.2.3.1/cos_xml_android_v1.2.3.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cos_xml_android_v1.2.3.2/cos_xml_android_v1.2.3.2.iml" filepath="$PROJECT_DIR$/cos_xml_android_v1.2.3.2/cos_xml_android_v1.2.3.2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cos_xml_android_v1.3.0/cos_xml_android_v1.3.0.iml" filepath="$PROJECT_DIR$/cos_xml_android_v1.3.0/cos_xml_android_v1.3.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cos_xml_android_v5.4.3.0/cos_xml_android_v5.4.3.0.iml" filepath="$PROJECT_DIR$/cos_xml_android_v5.4.3.0/cos_xml_android_v5.4.3.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cosv4_1.4.3.11/cosv4_1.4.3.11.iml" filepath="$PROJECT_DIR$/cosv4_1.4.3.11/cosv4_1.4.3.11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cosv4_1.4.3.12/cosv4_1.4.3.12.iml" filepath="$PROJECT_DIR$/cosv4_1.4.3.12/cosv4_1.4.3.12.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cosv4_1.4.3.13/cosv4_1.4.3.13.iml" filepath="$PROJECT_DIR$/cosv4_1.4.3.13/cosv4_1.4.3.13.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cosv4_1.4.3.16/cosv4_1.4.3.16.iml" filepath="$PROJECT_DIR$/cosv4_1.4.3.16/cosv4_1.4.3.16.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cosv4_1.4.3.17/cosv4_1.4.3.17.iml" filepath="$PROJECT_DIR$/cosv4_1.4.3.17/cosv4_1.4.3.17.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cosv4_1.4.3.18/cosv4_1.4.3.18.iml" filepath="$PROJECT_DIR$/cosv4_1.4.3.18/cosv4_1.4.3.18.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cosv4_1.4.3.5/cosv4_1.4.3.5.iml" filepath="$PROJECT_DIR$/cosv4_1.4.3.5/cosv4_1.4.3.5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cosv4_1.4.3.6/cosv4_1.4.3.6.iml" filepath="$PROJECT_DIR$/cosv4_1.4.3.6/cosv4_1.4.3.6.iml" />
+    </modules>
+  </component>
+</project>
