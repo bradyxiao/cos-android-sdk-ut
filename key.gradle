@@ -4,23 +4,23 @@ android {
             buildConfigField "String", "SECRET_ID", "\"$System.env.COS_SECRET_ID\""
             buildConfigField "String", "SECRET_KEY", "\"$System.env.COS_SECRET_KEY\""
 
-            buildConfigField "String", "V4_REGION" "\"$System.env.V4_REGION\""
-            buildConfigField "String", "V5_REGION" "\"$System.env.V5_REGION\""
+            buildConfigField "String", "V4_REGION", "\"$System.env.V4_REGION\""
+            buildConfigField "String", "V5_REGION", "\"$System.env.V5_REGION\""
 
 //            buildConfigField "String", "APPID", "\"$System.env.APPID\""
-//            buildConfigField "String", "V4_BUCKET" "\"$System.env.V4_BUCKET\""
-//            buildConfigField "String", "V5_BUCKET" "\"$System.env.V5_REGION\""
+//            buildConfigField "String", "V4_BUCKET", "\"$System.env.V4_BUCKET\""
+//            buildConfigField "String", "V5_BUCKET", "\"$System.env.V5_REGION\""
         }
         release {
             buildConfigField "String", "SECRET_ID", "\"$System.env.COS_SECRET_ID\""
             buildConfigField "String", "SECRET_KEY", "\"$System.env.COS_SECRET_KEY\""
 
-            buildConfigField "String", "V4_REGION" "\"$System.env.V4_REGION\""
-            buildConfigField "String", "V5_REGION" "\"$System.env.V5_REGION\""
+            buildConfigField "String", "V4_REGION", "\"$System.env.V4_REGION\""
+            buildConfigField "String", "V5_REGION", "\"$System.env.V5_REGION\""
 
 //            buildConfigField "String", "APPID", "\"$System.env.APPID\""
-//            buildConfigField "String", "V4_BUCKET" "\"$System.env.V4_BUCKET\""
-//            buildConfigField "String", "V5_BUCKET" "\"$System.env.V5_REGION\""
+//            buildConfigField "String", "V4_BUCKET", "\"$System.env.V4_BUCKET\""
+//            buildConfigField "String", "V5_BUCKET" ,"\"$System.env.V5_REGION\""
         }
 
     }
